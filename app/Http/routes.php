@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Portfolio Routes
+Route::get('/', 'PortfolioController@index');
