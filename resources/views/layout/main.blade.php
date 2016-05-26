@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap.css">
-    @yield('stylees')
+    <link rel="stylesheet" href="./css/site.css">
+
+    @yield('styles')
 </head>
 <body>
     @include('layout.partials.header')
