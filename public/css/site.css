@@ -6,6 +6,10 @@ section {
     font: inherit;
     vertical-align: baseline;
 }
+
+img {
+    max-width: 100%;
+}
 /*------- HOME SECTION -------*/
 
 
@@ -114,8 +118,84 @@ section {
     padding-bottom: 60px;
 }
 
+.about-inner {
+    margin: 60px 0;
+}
+
+.person-about .title {
+    margin-bottom: 15px;
+}
+
+.about-subtitle, .personal-subtitle{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #00bcd4;
+}
+.personal-subtitle:before {
+    content: "";
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    width: 83.5%;
+    border-bottom: 4px solid #dddddd;
+}
+
+.about-subtitle:before {
+    content: "";
+    position: absolute;
+    top: 13%;
+    left: 22%;
+    width: 76%;
+    border-bottom: 4px solid #dddddd;
+}
+
+.person-about .subtitle {
+    font-weight: 100;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.person-img img {
+    border: 8px solid #fff;
+
+}
+
+.person-about p {
+    color: #727272;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+.card-content p {
+    color: #727272 !important;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
 
 
+.person-about > a.btn-large {
+    background-color: #fff;
+}
+
+.person-about > a.btn-large {
+    font-size: 14px;
+}
+
+.person-about > a.btn-large,
+.home-content > a.btn-large {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.person-about > a.btn-large i {
+    font-size: 26px;
+    margin-right: 8px;
+}
 
 /* Screens Resolution : 1024px
 -------------------------------------------------------------------------- */
@@ -137,7 +217,21 @@ section {
 }
 
 @media only screen and (max-width: 992px) {
-
+    .about-subtitle:before {
+        content: "";
+        position: absolute;
+        top: 11%;
+        left: 25%;
+        width: 73%;
+    }
+    .personal-subtitle:before {
+        content: "";
+        position: absolute;
+        top: 7%;
+        left: 25%;
+        width: 72.8%;
+        border-bottom: 4px solid #dddddd;
+    }
     .home-inner {
         min-height: 400px;
     }
@@ -332,7 +426,22 @@ section {
 }
 
 @media only screen and (max-width: 767px) {
+    .about-subtitle:before {
+        content: "";
+        position: absolute;
+        top: 4%;
+        left: 35%;
+        width: 63%;
+    }
 
+    .personal-subtitle:before {
+        content: "";
+        position: absolute;
+        top: .8%;
+        left: 35%;
+        width: 61.5%;
+        border-bottom: 4px solid #dddddd;
+    }
     .home-inner {
         height: calc(100vh - 100px);
     }
@@ -460,7 +569,20 @@ section {
 }
 
 @media only screen and (max-width: 479px) {
-
+    .about-subtitle:before {
+        content: "";
+        position: absolute;
+        top: 4%;
+        left: 40%;
+        width: 56%;
+    }
+    .personal-subtitle:before {
+        content: "";
+        position: absolute;
+        top: .8%;
+        left: 45%;
+        width: 50%;
+    }
     .home-title {
         font-size: 36px;
     }

@@ -40,7 +40,7 @@
                         <a href="#">Contacto</a>
                     </li>
                 </ul>
-                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi mdi-menu"></i></a>
             </div>
         </nav>
     </div>

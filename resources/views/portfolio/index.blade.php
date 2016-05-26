@@ -52,20 +52,19 @@
         <div class="container">
             <div class="row">
                 <div class="clearfix about-inner">
-
                     <div class="col-sm-12 col-md-8">
                         <div class="person-about">
-                            <h3 class="about-subtitle">My Story</h3>
+                            <h3 class="about-subtitle">About Me</h3>
                             <p>Hello, I’m a UI/UX Designer &amp; Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University. <br>
                                 And scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                            <a class="waves-effect waves-light btn-large brand-bg white-text"><i class="mdi-content-archive left"></i> Download Resume</a>
+                            <a class="waves-effect waves-light btn-large brand-bg white-text"><i class="mdi mdi-package-down left"></i> Download Resume</a>
                         </div>
                     </div>
                     <!-- about me description -->
 
-                    <div class="col-sm-6 col-md-4">
-                        <div class="person-img wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-                            <img class="z-depth-1" src="img/person.jpg" alt="">
+                    <div class="col-sm-12 col-md-4">
+                        <div class="person-img center" style="visibility: visible; animation-name: fadeIn;">
+                            <img class="z-depth-1 responsive-img" src="https://avatars0.githubusercontent.com/u/16660388?v=3&s=460" width="360" height="360" alt="">
                         </div>
                     </div>
                     <!-- about me image -->
@@ -75,9 +74,65 @@
         </div>
         <!-- .container end -->
     </section>
+
+    <section id="personal" class="scroll-section root-sec padd-tb-60 about-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="clearfix about-inner">
+                    <div class="col-sm-12 col-md-12">
+                        <div class="personal-goals">
+                            <h3 class="personal-subtitle">Personal</h3>
+                            <div class="row">
+                                <div class="col-sm-4 col-md-4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="https://d13yacurqjgara.cloudfront.net/users/2733/screenshots/741958/dribbble-foxes.jpg">
+                                            <span class="card-title">My Philosophy</span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p>
+                                                Treat your password like your toothbrush. Don't let anybody else use it, and get a new one every six months.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-md-4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="https://d13yacurqjgara.cloudfront.net/users/2733/screenshots/741958/dribbble-foxes.jpg">
+                                            <span class="card-title">My Mission</span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p>
+                                                Treat your password like your toothbrush. Don't let anybody else use it, and get a new one every six months.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-md-4">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="https://d13yacurqjgara.cloudfront.net/users/2733/screenshots/741958/dribbble-foxes.jpg">
+                                            <span class="card-title">My Vission</span>
+                                        </div>
+                                        <div class="card-content">
+                                            <p>
+                                                Treat your password like your toothbrush. Don't let anybody else use it, and get a new one every six months.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .container end -->
+    </section>
 @stop
 @section('scripts')
-    <script !src="">
+    <script>
         $(function() {
             $('a[href*="#"]:not([href="#"])').click(function() {
                 if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
