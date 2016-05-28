@@ -28,7 +28,10 @@
                             <div class="center-align home-content">
                                 <h1 class="home-title">HI! I'm <span>John Doe</span></h1>
                                 <h2 class="home-subtitle">UX/UI Designer from Dhaka, Bangladesh</h2>
-                                <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">Hire Me <i class="mdi-content-send left"></i>
+                                <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">
+                                    Hire Me
+                                    <i class="mdi mdi-send left">
+                                    </i>
                                 </a>
                             </div>
                         </div>

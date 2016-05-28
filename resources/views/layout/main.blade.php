@@ -16,7 +16,7 @@
     @include('layout.partials.header')
     @yield('content')
 
-
+    @include('layout.partials.footer')
     {{--scripts--}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>

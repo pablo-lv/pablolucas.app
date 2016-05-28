@@ -14,7 +14,7 @@ img {
 
 
 #home {
-    background: url('../img/Mountainous_View_by_Sven_Scheuermeier.jpg') no-repeat fixed center center / cover;
+    background: url('../img/fox-wallpaper-5.jpg') no-repeat fixed center center / cover;
     margin-top: -64px;
 }
 
@@ -195,6 +195,47 @@ img {
 .person-about > a.btn-large i {
     font-size: 26px;
     margin-right: 8px;
+}
+
+/*---FOOTER-SECTION*/
+footer {
+    text-align: center;
+}
+.footer-message {
+    padding: 30px 0;
+}
+footer .footer-message p {
+    width: 50%;
+    margin: 0 auto 40px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-message h5 {
+    margin: 0.82rem 0 0.656rem 0;
+}
+.social i {
+    font-size: 50px;
+    width: 77px;
+    margin: 0 10px 0 0;
+    text-align: center;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    background: transparent;
+    opacity: 0.2;
+    color: #fff;
+}
+.social i:hover{
+    opacity: 1.0;
+    background: transparent;
+}
+
+footer .copyright {
+    color: #FAF9FD;
+    padding: 10px 0;
 }
 
 /* Screens Resolution : 1024px
@@ -565,6 +606,22 @@ img {
         margin-bottom: 0.5%;
         width: 49%;
     }
+    footer .footer-message p {
+        width: 80%;
+    }
+    .social i {
+        font-size: 30px;
+        width: 40px;
+        margin: 0 10px 0 0;
+        text-align: center;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+        background: transparent;
+        opacity: 0.2;
+        color: #fff;
+    }
 
 }
 
@@ -649,7 +706,9 @@ img {
     .funfact-inner, .testimonial-inner, .blog-inner, .contact-inner {
         padding: 0;
     }
-
+    footer .footer-message p {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 359px) {
