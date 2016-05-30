@@ -12,4 +12,22 @@
 */
 
 //Portfolio Routes
-Route::get('/', 'PortfolioController@index');
+Route::get('/', [
+    'as' => 'site.index',
+    'uses' => 'PortfolioController@index'
+]);
+
+Route::get('/resume',[
+    'as' => 'site.resume',
+    'uses' => 'PortfolioController@resume'
+]);
+
+Route::get('/portfolio' , [
+    'as' => 'site.portfolio',
+    'uses' => 'PortfolioController@portfolio'
+]);
+
+Route::get('/contact', [
+    'as' => 'site.contact',
+    'uses' => 'PortfolioController@contact'
+]);
