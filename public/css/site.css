@@ -126,7 +126,7 @@ img {
     margin-bottom: 15px;
 }
 
-.about-subtitle, .personal-subtitle, .contact-subtitle{
+.about-subtitle, .personal-subtitle, .contact-subtitle, .skills-subtitle {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 30px;
@@ -161,7 +161,7 @@ img {
     border: 8px solid #fff;
 
 }
-.contact-subtitle {
+.contact-subtitle, .skills-subtitle {
     position: relative;
 }
 .contact-subtitle:before {
@@ -172,6 +172,16 @@ img {
     width: 85%;
     border-bottom: 4px solid #dddddd;
 }
+
+.skills-subtitle:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    width: 82%;
+    border-bottom: 4px solid #dddddd;
+}
+
 .contact-title p {
     color: #727272 !important;
     text-align: justify;
@@ -302,6 +312,10 @@ footer .copyright {
     .contact-subtitle:before {
         left: 20%;
         width: 80%;
+    }
+    .skills-subtitle:before {
+        left: 25%;
+        width: 75%;
     }
     .home-inner {
         min-height: 400px;
@@ -475,6 +489,10 @@ footer .copyright {
         left: 30%;
         width: 70%;
     }
+    .skills-subtitle:before {
+        left: 30%;
+        width: 70%;
+    }
     .home-inner {
         height: calc(100vh - 100px);
     }
@@ -636,6 +654,10 @@ footer .copyright {
         left: 40%;
         width: 60%;
     }
+    .skills-subtitle:before {
+        left: 50%;
+        width: 50%;
+    }
     .home-title {
         font-size: 36px;
     }
@@ -682,7 +704,7 @@ footer .copyright {
         text-align: center;
     }
 
-    .protfolio-item li {
+    .portfolio-item li {
         float: left;
         margin-right: 0;
         margin-bottom: 20px;
@@ -709,6 +731,10 @@ footer .copyright {
 
 @media only screen and (max-width: 359px) {
     .contact-subtitle:before {
+        left: 50%;
+        width: 50%;
+    }
+    .skills-subtitle:before {
         left: 50%;
         width: 50%;
     }
