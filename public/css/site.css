@@ -255,6 +255,7 @@ footer .footer-message p {
 .social i:hover{
     opacity: 1.0;
     background: transparent;
+    transform: skewY(25deg);
 }
 
 footer .copyright {
@@ -272,6 +273,7 @@ footer .copyright {
     border-bottom: #e65100 !important;
     box-shadow: 0px 1px 0px #f57c00 !important;
 }
+
 
 /* Screens Resolution : 1024px
 -------------------------------------------------------------------------- */

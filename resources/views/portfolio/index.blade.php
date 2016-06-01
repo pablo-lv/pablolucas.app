@@ -26,8 +26,8 @@
                     <div class="col-sm-12">
                         <div class="home-inner">
                             <div class="center-align home-content">
-                                <h1 class="home-title">HI! I'm <span>John Doe</span></h1>
-                                <h2 class="home-subtitle">UX/UI Designer from Dhaka, Bangladesh</h2>
+                                <h1 class="home-title">Hola soy <span>Pablo Lucas</span></h1>
+                                <h2 class="home-subtitle">Ing. Tecnologás de la Información y Comunicación</h2>
                                 <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">
                                     Hire Me
                                     <i class="mdi mdi-send left">
@@ -57,10 +57,12 @@
                 <div class="clearfix about-inner">
                     <div class="col-sm-12 col-md-8">
                         <div class="person-about">
-                            <h3 class="about-subtitle">About Me</h3>
+                            <h3 class="about-subtitle">Sobre Mi</h3>
                             <p>Hello, I’m a UI/UX Designer &amp; Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University. <br>
                                 And scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                            <a class="waves-effect waves-light btn-large brand-bg white-text"><i class="mdi mdi-package-down left"></i> Download Resume</a>
+                            <a class="waves-effect waves-light btn-large brand-bg white-text">
+                                <i class="mdi mdi-package-down left"></i> Descarga CV
+                            </a>
                         </div>
                     </div>
                     <!-- about me description -->
@@ -90,7 +92,7 @@
                                     <div class="card">
                                         <div class="card-image">
                                             <img src="https://d13yacurqjgara.cloudfront.net/users/2733/screenshots/741958/dribbble-foxes.jpg">
-                                            <span class="card-title">My Philosophy</span>
+                                            <span class="card-title">Misión</span>
                                         </div>
                                         <div class="card-content">
                                             <p>
@@ -103,7 +105,7 @@
                                     <div class="card">
                                         <div class="card-image">
                                             <img src="https://d13yacurqjgara.cloudfront.net/users/2733/screenshots/741958/dribbble-foxes.jpg">
-                                            <span class="card-title">My Mission</span>
+                                            <span class="card-title">Visión</span>
                                         </div>
                                         <div class="card-content">
                                             <p>
@@ -116,7 +118,7 @@
                                     <div class="card">
                                         <div class="card-image">
                                             <img src="https://d13yacurqjgara.cloudfront.net/users/2733/screenshots/741958/dribbble-foxes.jpg">
-                                            <span class="card-title">My Vission</span>
+                                            <span class="card-title">Filosofía</span>
                                         </div>
                                         <div class="card-content">
                                             <p>
