@@ -28,8 +28,8 @@
                             <div class="center-align home-content">
                                 <h1 class="home-title">Hola soy <span>Pablo Lucas</span></h1>
                                 <h2 class="home-subtitle">Ing. Tecnologás de la Información y Comunicación</h2>
-                                <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">
-                                    Hire Me
+                                <a href="{{ route('site.contact') }}" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">
+                                     CONTACTO
                                     <i class="mdi mdi-send left">
                                     </i>
                                 </a>
@@ -58,9 +58,8 @@
                     <div class="col-sm-12 col-md-8">
                         <div class="person-about">
                             <h3 class="about-subtitle">Sobre Mi</h3>
-                            <p>Hello, I’m a UI/UX Designer &amp; Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University. <br>
-                                And scrambled it to make a type specimen book. It has survived not only five centuries</p>
-                            <a class="waves-effect waves-light btn-large brand-bg white-text">
+                            <p>Hola, Soy guitarrista por convicción y desarrollador web de profesión, apasionado de la tecnología y de la mejora continua.</p>
+                            <a href="" class="waves-effect waves-light btn-large brand-bg white-text">
                                 <i class="mdi mdi-package-down left"></i> Descarga CV
                             </a>
                         </div>
@@ -96,7 +95,9 @@
                                         </div>
                                         <div class="card-content">
                                             <p>
-                                                Treat your password like your toothbrush. Don't let anybody else use it, and get a new one every six months.
+                                                Soy una persona comprometida en todos los aspectos de mi vida, enfocado en contribuir a la solución de problemas mediante el uso de la programación.
+                                                <br>
+                                                <br>
                                             </p>
                                         </div>
                                     </div>
@@ -109,7 +110,9 @@
                                         </div>
                                         <div class="card-content">
                                             <p>
-                                                Treat your password like your toothbrush. Don't let anybody else use it, and get a new one every six months.
+                                                Adquirir nuevo conocimientos en tecnologias de desarrollo web y poder aplicarlas a mi trabajo, ser una persona innovadora a tráves de la práctica de mis conocimientos.
+                                                <br>
+                                                <br>
                                             </p>
                                         </div>
                                     </div>
@@ -122,7 +125,10 @@
                                         </div>
                                         <div class="card-content">
                                             <p>
-                                                Treat your password like your toothbrush. Don't let anybody else use it, and get a new one every six months.
+                                                Programming is not a zero-sum game. Teaching something to a fellow programmer doesn't take it away from you.
+                                                I'm happy to share what I can, because I'm in it for the love of programming.
+                                                <br>
+                                                <strong>John Carmack</strong>
                                             </p>
                                         </div>
                                     </div>

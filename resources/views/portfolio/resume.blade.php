@@ -251,11 +251,20 @@
                             <h3 class="skills-subtitle">Habilidades</h3>
                             <div class="row">
                                 <div class="col-sm-12 col-md-3">
-                                    <p>
-                                        Backend Skills
+                                    <p class="font-color">
+                                        Backend
                                     </p>
                                     <div class="chip waves-effect waves-light light-blue lighten-1">
                                         Laravel
+                                    </div>
+                                    <div class="chip waves-effect waves-light lighten-1">
+                                        PHP
+                                    </div>
+                                    <div class="chip waves-effect waves-light light-blue lighten-1">
+                                        JAVA
+                                    </div>
+                                    <div class="chip waves-effect waves-light light-blue lighten-1">
+                                        MYSQL
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-3">
@@ -302,8 +311,8 @@
                                 </div>
 
                                 <div class="col-sm-12 col-md-3">
-                                    <p>
-                                        Frontend Skills
+                                    <p class="font-color">
+                                        Frontend
                                     </p>
                                     <div class="chip blue waves-effect waves-light">
                                         JS
@@ -313,6 +322,12 @@
                                     </div>
                                     <div class="chip waves-effect waves-light light-blue lighten-1">
                                         Bootstrap
+                                    </div>
+                                    <div class="chip waves-effect waves-light lighten-1">
+                                        materialize
+                                    </div>
+                                    <div class="chip waves-effect waves-light light-blue lighten-1">
+                                        CSS
                                     </div>
                                 </div>
                             </div>
@@ -337,7 +352,7 @@
                                     </div>
                                     <div class="timeline-content">
                                         <h4>dinkbit <span class="right">2016</span></h4>
-                                        <p>
+                                        <p class="font-color">
                                             Estadía de Ingeniería en la empresa dinkbit.
                                         </p>
                                     </div>
@@ -349,7 +364,7 @@
                                     </div>
                                     <div class="timeline-content right">
                                         <h4>UTSH <span class="right">2014 - 2016</span></h4>
-                                        <p>
+                                        <p class="font-color">
                                             Ingeniería en Tecnologías de la Información y Comunicación.
                                         </p>
                                     </div>
@@ -361,7 +376,7 @@
                                     </div>
                                     <div class="timeline-content">
                                         <h4>CANACO PACHUCA <span class="right">2014</span></h4>
-                                        <p>
+                                        <p class="font-color">
                                             Estadía de TSU Camara Nacional de Comercio Servicios y Turismo de Pachuca.
                                         </p>
                                     </div>
@@ -373,7 +388,7 @@
                                     </div>
                                     <div class="timeline-content right">
                                         <h4>UTSH <span class="right">2012 - 2014</span></h4>
-                                        <p>
+                                        <p class="font-color">
                                             Técnico Superior Universitario en Sistemas Informáticos.
                                         </p>
                                     </div>

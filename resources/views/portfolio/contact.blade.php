@@ -8,11 +8,24 @@
                     <div class="col-sm-12 col-md-12">
                         <div class="contact-title">
                             <h3 class="contact-subtitle">Contacto</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dolor, dolores esse eum ex excepturi explicabo illum qui? Amet atque corporis et explicabo illo maxime, perferendis perspiciatis quas saepe vero.</p>
+                            <p>Por favor, siéntase libre de enviarme un correo electrónico, contestaré tan pronto como sea posible.</p>
+                            <br>
+
                             <div class="row">
                                 <div class="col-sm-12 col-md-4">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ducimus nulla officia provident reiciendis. Aperiam culpa, cum dolorum, eligendi explicabo id inventore ipsam laborum modi nemo nisi nulla ut voluptatem?</p>
-                                    <p>phone:</p>
+                                    <p>
+                                        <b>Datos de contacto</b>
+                                        <br>
+                                        <br>
+                                        Teléfono:
+                                        <a href="" >771 125 9358</a>
+                                        <br>
+                                        Email:
+                                        <a href="mailto:pablo.lucv@gmail.com">pablo.lucv@gmail.com</a>
+                                        <br>
+                                        Celular:
+                                        <a href="tel:7711259358">771 125 9358</a>
+                                    </p>
                                 </div>
                                 <div class="col-sm-12 col-md-8">
                                     <div class="clearfix contact-form card-panel grey lighten-5">
