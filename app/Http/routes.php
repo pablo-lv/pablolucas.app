@@ -39,4 +39,4 @@ Route::get('/contact', [
 
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/dashboard', 'HomeController@index');
