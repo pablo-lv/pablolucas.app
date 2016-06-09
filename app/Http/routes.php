@@ -27,7 +27,16 @@ Route::get('/portfolio' , [
     'uses' => 'PortfolioController@portfolio'
 ]);
 
+Route::get('/blog', [
+    'as' => 'site.blog',
+    'uses' => 'PostsController@index'
+]);
+
 Route::get('/contact', [
     'as' => 'site.contact',
     'uses' => 'PortfolioController@contact'
 ]);
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
