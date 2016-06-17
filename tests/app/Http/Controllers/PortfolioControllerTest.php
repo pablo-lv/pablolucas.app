@@ -23,5 +23,11 @@ class PortfolioControllerTest extends TestCase
     {
         $this->visit('/contact')->seeStatusCode(200);
     }
+
+    /** @test */
+    public function blog_status_code_should_be_200()
+    {
+        $this->visit('/blog')->seeStatusCode(200);
+    }
 }
 

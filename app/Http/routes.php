@@ -27,16 +27,47 @@ Route::get('/portfolio' , [
     'uses' => 'PortfolioController@portfolio'
 ]);
 
-Route::get('/blog', [
-    'as' => 'site.blog',
-    'uses' => 'PostsController@index'
-]);
-
 Route::get('/contact', [
     'as' => 'site.contact',
     'uses' => 'PortfolioController@contact'
 ]);
 
+//Blog Routes
+Route::get('/blog', [
+    'as' => 'site.blog',
+    'uses' => 'PostsController@index'
+]);
+
+Route::get('/blog/{slug}', [
+    'as' => 'blog.post',
+    'uses' => 'PostsController@show'
+]);
+
+
+
+
+// Auth Routes
 Route::auth();
 
-Route::get('/dashboard', 'HomeController@index');
+// Dashboard Routes
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', 'HomeController@index');
+
+    //Posts Routes
+    Route::post('/blog', [
+        'as' => 'blog.store',
+        'uses' => 'PostsController@store'
+    ]);
+
+    Route::put('/blog/{slug}', [
+        'as' => 'blog.update',
+        'uses' => 'PostsController@update'
+    ]);
+
+    Route::delete('/blog/{slug}', [
+        'as' => 'blog.destroy',
+        'uses' => 'PostsController@destroy'
+    ]);
+
+});
+

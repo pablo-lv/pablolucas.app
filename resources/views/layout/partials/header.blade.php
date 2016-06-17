@@ -16,7 +16,7 @@
                         <a href="#">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="{{ route('site.blog') }}">Blog</a>
                     </li>
                     <li>
                         <a href="{{ route('site.contact') }}">Contacto</a>

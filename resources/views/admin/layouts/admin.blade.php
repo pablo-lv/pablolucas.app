@@ -61,7 +61,7 @@
                 <input type="text" class="ts-sidebar-search" placeholder="Search here...">
             </li>
             <li class="ts-label">Main</li>
-            <li class="open"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            <li class="open"><a href=""><i class="fa fa-dashboard"></i> Posts</a></li>
 
 
             <!-- Account from above -->
@@ -85,10 +85,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-
-                    <h2 class="page-title">Dashboard</h2>
-
-
+                    @yield('content')
                 </div>
             </div>
 
