@@ -339,6 +339,50 @@ footer .copyright {
     box-shadow: 0px 1px 0px #f57c00 !important;
 }
 
+/* BLOG */
+
+.title-post{
+    font-size: 2.2em;
+    margin-top: 10px;
+}
+
+.data-post {
+    color: #999;
+}
+
+.data-post span {
+    margin: 0 20px 0 2px;
+    line-height: 2em;
+}
+
+.post-description {
+    text-align: justify;
+    color: #5e6163;
+}
+
+.post-link {
+    color: #e65100;
+    font-weight:bold;
+}
+
+.collection-header h4 {
+    font-size: 1.2em;
+    color: #e65100;
+}
+
+.post-date {
+    width:100%;
+    display: inline-block;
+}
+
+.collection.with-header .collection-item {
+    padding-left: 20px;
+}
+
+.share-text {
+    font-size:1.5em;
+}
+
 
 /* Screens Resolution : 1024px
 -------------------------------------------------------------------------- */
@@ -688,7 +732,7 @@ footer .copyright {
     }
     .social i {
         font-size: 30px;
-        width: 40px;
+        /*width: 40px;*/
         margin: 0 10px 0 0;
         text-align: center;
         -webkit-transition: all 0.2s ease-out;
@@ -696,7 +740,7 @@ footer .copyright {
         -o-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
         background: transparent;
-        opacity: 0.2;
+        /*opacity: 0.2;*/
         color: #fff;
     }
 

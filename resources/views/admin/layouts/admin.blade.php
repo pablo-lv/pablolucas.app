@@ -12,21 +12,21 @@
     <title>Paul Site Admin</title>
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="css/admin/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/admin/font-awesome.min.css">
     <!-- Sandstone Bootstrap CSS -->
-    <link rel="stylesheet" href="css/admin/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/admin/bootstrap.min.css">
     <!-- Bootstrap Datatables -->
-    <link rel="stylesheet" href="css/admin/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/admin/dataTables.bootstrap.min.css">
     <!-- Bootstrap social button library -->
-    <link rel="stylesheet" href="css/admin/bootstrap-social.css">
+    <link rel="stylesheet" href="../../css/admin/bootstrap-social.css">
     <!-- Bootstrap select -->
-    <link rel="stylesheet" href="css/admin/bootstrap-select.css">
+    <link rel="stylesheet" href="../../css/admin/bootstrap-select.css">
     <!-- Bootstrap file input -->
-    <link rel="stylesheet" href="css/admin/fileinput.min.css">
+    <link rel="stylesheet" href="../../css/admin/fileinput.min.css">
     <!-- Awesome Bootstrap checkbox -->
-    <link rel="stylesheet" href="css/admin/awesome-bootstrap-checkbox.css">
+    <link rel="stylesheet" href="../../css/admin/awesome-bootstrap-checkbox.css">
     <!-- Admin Stye -->
-    <link rel="stylesheet" href="css/admin/style.css">
+    <link rel="stylesheet" href="../../css/admin/style.css">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

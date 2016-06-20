@@ -11,7 +11,7 @@
 |
 */
 
-use Illuminate\Support\Str as Str;
+
 
 $factory->define(App\User::class, function (Faker\Generator $faker) {
     return [
@@ -25,8 +25,8 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(App\Post::class, function (Faker\Generator $faker) {
 
     return [
-        'title' => $faker->sentences(),
-        'description' => $faker->text(50),
-        'content'     => $faker->text(250),
+        'title' => $faker->sentence,
+        'description' => $faker->text(300),
+        'content'     => $faker->text(3000),
     ];
  });

@@ -25,6 +25,7 @@ class PostsController extends Controller
     {
         $posts = Post::all();
 
+
         return view('blog.index', compact('posts'));
     }
 
@@ -48,7 +49,18 @@ class PostsController extends Controller
             ], 404);
         }
 
-        return view('blog.show', compact('post'));
+        $recentPost = Post::select('title', 'slug', 'created_at')->orderBy('created_at', 'DESC')->limit(5)->get();
+
+
+        return view('blog.show')->with([
+            'post' => $post,
+            'recentPost' => $recentPost
+        ]);
+    }
+
+    public function create()
+    {
+        return view('blog.create');
     }
 
     public function update(Request $request, $slug)

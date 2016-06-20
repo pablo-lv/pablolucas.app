@@ -6,7 +6,7 @@
                     <a id="logo-container" href="#" class="brand-logo">Lucas</a>
                 </div>
                 <ul class="right hide-on-med-and-down">
-                    <li>
+                    <li {{ Route::is('site.index') }}>
                         <a href="{{ route('site.index') }}">Sobre Mi</a>
                     </li>
                     <li>

@@ -21,4 +21,5 @@ class Post extends Model
             $this->attributes['slug'] = str_slug($value);
         }
     }
+
 }

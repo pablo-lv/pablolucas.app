@@ -33,13 +33,13 @@ Route::get('/contact', [
 ]);
 
 //Blog Routes
-Route::get('/blog', [
+Route::get('/blog/', [
     'as' => 'site.blog',
     'uses' => 'PostsController@index'
 ]);
 
 Route::get('/blog/{slug}', [
-    'as' => 'blog.post',
+    'as' => 'site.post',
     'uses' => 'PostsController@show'
 ]);
 
@@ -67,6 +67,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::delete('/blog/{slug}', [
         'as' => 'blog.destroy',
         'uses' => 'PostsController@destroy'
+    ]);
+
+    Route::get('/dashboard/create', [
+        'as' => 'blog.create',
+        'uses' => 'PostsController@create'
     ]);
 
 });
