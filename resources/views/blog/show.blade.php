@@ -18,7 +18,7 @@
                             </div>
                             <p><a href=""><img src="../img/traslasierra.jpg" alt="" width="100%" height="150px"></a></p>
                             <p class="post-description">{{ $post->description }}</p>
-                            <p> {{ $post->content }}</p>
+                            <p> {!! $post->content !!}</p>
                             <div class="sharing">
                                 <h3 class="share-text">Por favor comparte:</h3>
                                 <a href="" class="waves-effect waves-light  btn blue darken-4">
@@ -53,3 +53,11 @@
         <!-- .container end -->
     </section>
 @stop
+@section('styles')
+    <link rel="stylesheet" href="{{ asset('/vendors/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css') }}">
+@stop
+@section('scripts')
+    <script src="{{ asset('/vendors/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js') }}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+@stop
+

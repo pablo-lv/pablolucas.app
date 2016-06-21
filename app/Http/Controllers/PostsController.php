@@ -37,8 +37,15 @@ class PostsController extends Controller
     public function store(Request $request)
     {
         $post = new Post($request->all());
+        $post->save();
 
-        return view('blog.show', compact($post));
+        $recentPost = Post::select('title', 'slug', 'created_at')->orderBy('created_at', 'DESC')->limit(5)->get();
+
+
+        return redirect()->route('site.post', $post->slug)->with([
+            'post' => $post,
+            'recentPost' => $recentPost
+        ]);
     }
 
     public function show($slug)
