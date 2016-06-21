@@ -53,25 +53,35 @@ Route::auth();
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', 'HomeController@index');
 
-    //Posts Routes
-    Route::post('/blog', [
-        'as' => 'blog.store',
-        'uses' => 'PostsController@store'
-    ]);
-
-    Route::put('/blog/{slug}', [
-        'as' => 'blog.update',
-        'uses' => 'PostsController@update'
-    ]);
-
-    Route::delete('/blog/{slug}', [
-        'as' => 'blog.destroy',
-        'uses' => 'PostsController@destroy'
+    Route::get('/dashboard/posts', [
+        'as' => 'pots.posts',
+        'uses' => 'PostsController@posts'
     ]);
 
     Route::get('/dashboard/create', [
-        'as' => 'blog.create',
+        'as' => 'post.create',
         'uses' => 'PostsController@create'
+    ]);
+
+    //Posts Routes
+    Route::post('/dashboard/store', [
+        'as' => 'post.store',
+        'uses' => 'PostsController@store'
+    ]);
+
+    Route::get('/dashboard/edit', [
+        'as' => 'post.edit',
+        'uses' => 'PostsController@edit'
+    ]);
+
+    Route::put('/dashboard/{slug}', [
+        'as' => 'post.update',
+        'uses' => 'PostsController@update'
+    ]);
+
+    Route::delete('/dashboard/blog/{slug}', [
+        'as' => 'post.destroy',
+        'uses' => 'PostsController@destroy'
     ]);
 
 });

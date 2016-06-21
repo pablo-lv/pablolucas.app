@@ -29,6 +29,11 @@ class PostsController extends Controller
         return view('blog.index', compact('posts'));
     }
 
+    public function create()
+    {
+        return view('blog.create');
+    }
+
     public function store(Request $request)
     {
         $post = new Post($request->all());
@@ -56,11 +61,6 @@ class PostsController extends Controller
             'post' => $post,
             'recentPost' => $recentPost
         ]);
-    }
-
-    public function create()
-    {
-        return view('blog.create');
     }
 
     public function update(Request $request, $slug)

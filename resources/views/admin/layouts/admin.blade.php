@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
 
 <head>
     <meta charset="UTF-8">
@@ -61,7 +61,8 @@
                 <input type="text" class="ts-sidebar-search" placeholder="Search here...">
             </li>
             <li class="ts-label">Main</li>
-            <li class="open"><a href=""><i class="fa fa-dashboard"></i> Posts</a></li>
+            <li class="open"><a href="#"><i class="fa fa-dashboard"></i> Posts</a></li>
+            <li class="open"><a href="{{ route('post.create') }}"><i class="fa fa-plus"></i> Create</a></li>
 
 
             <!-- Account from above -->
