@@ -355,7 +355,7 @@ footer .copyright {
     line-height: 2em;
 }
 
-.post-description {
+.post-description , .post-content {
     text-align: justify;
     color: #5e6163;
 }

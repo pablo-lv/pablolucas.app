@@ -16,9 +16,9 @@
                                     <span>{{ $post->created_at }}</span>
                                 </p>
                             </div>
-                            <p><a href=""><img src="../img/traslasierra.jpg" alt="" width="100%" height="150px"></a></p>
+                            {{--<p><a href=""><img src="../img/traslasierra.jpg" alt="" width="100%" height="150px"></a></p>--}}
                             <p class="post-description">{{ $post->description }}</p>
-                            <p> {!! $post->content !!}</p>
+                            <div class="post-content"> {!! $post->content !!}</div>
                             <div class="sharing">
                                 <h3 class="share-text">Por favor comparte:</h3>
                                 <a href="" class="waves-effect waves-light  btn blue darken-4">

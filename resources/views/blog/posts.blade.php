@@ -6,6 +6,7 @@
             <div class="panel-heading">
                 Posts
             </div>
+            @include('admin.partials.success')
             <div class="panel-body">
                 <table id="zctb" class="display table table-hover dataTable">
                     <thead>
@@ -25,7 +26,8 @@
                                 <th style="font-weight: normal;">{{ $post->description }}</th>
                                 <th style="font-weight: normal;">{{ $post->created_at }}</th>
                                 <th style="font-weight: normal;">
-                                    <a href="#">Actuaizar</a>
+                                    <a href="{{ route('site.post',$post->slug) }}" target="_blank">Ver</a><br>
+                                    <a href="{{ route('post.edit', $post) }}">Actuaizar</a>
                                     <a href="#">Eliminar</a>
                                 </th>
                             </tr>

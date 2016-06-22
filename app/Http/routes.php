@@ -69,7 +69,7 @@ Route::group(['middleware' => 'auth'], function () {
         'uses' => 'PostsController@store'
     ]);
 
-    Route::get('/dashboard/edit', [
+    Route::get('/dashboard/edit/{post}', [
         'as' => 'post.edit',
         'uses' => 'PostsController@edit'
     ]);

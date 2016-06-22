@@ -42,16 +42,19 @@ class PostsController extends Controller
 
     public function store(Request $request)
     {
+        $this->validate($request, [
+            'title'       => 'required|max:255',
+            'description' => 'required',
+            'content'     => 'required' 
+        ]);
+
         $post = new Post($request->all());
         $post->save();
 
         $recentPost = Post::select('title', 'slug', 'created_at')->orderBy('created_at', 'DESC')->limit(5)->get();
 
 
-        return redirect()->route('site.post', $post->slug)->with([
-            'post' => $post,
-            'recentPost' => $recentPost
-        ]);
+        return redirect()->route('pots.posts')->withSuccess("El post {$post->title} se ha creado correctamente");
     }
 
     public function show($slug)
@@ -74,6 +77,11 @@ class PostsController extends Controller
             'post' => $post,
             'recentPost' => $recentPost
         ]);
+    }
+
+    public function edit(Post $post)
+    {
+        return view('blog.edit', compact('post'));
     }
 
     public function update(Request $request, $slug)
