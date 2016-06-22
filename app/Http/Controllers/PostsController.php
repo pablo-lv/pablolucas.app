@@ -13,7 +13,7 @@ class PostsController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth')->only(['update']);
+        //$this->middleware('auth')->only(['update']);
     }
 
     /**
@@ -27,6 +27,12 @@ class PostsController extends Controller
 
 
         return view('blog.index', compact('posts'));
+    }
+
+    public function posts()
+    {
+        $posts = Post::all();
+        return view('blog.posts', compact('posts'));
     }
 
     public function create()

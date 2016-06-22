@@ -37,13 +37,13 @@
 
 <body>
 <div class="brand clearfix">
-    <a href="index.html" class="logo"><img src="img/logo.jpg" class="img-responsive" alt=""></a>
+    <a href="index.html" class="logo"><img src="{{ asset('/img/logo.jpg') }}" class="img-responsive" alt=""></a>
     <span class="menu-btn"><i class="fa fa-bars"></i></span>
     <ul class="ts-profile-nav">
         <li><a href="#">Help</a></li>
         <li><a href="#">Settings</a></li>
         <li class="ts-account">
-            <a href="#"><img src="img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a>
+            <a href="#"><img src="../../img/ts-avatar.jpg" class="ts-avatar hidden-side" alt=""> Account <i class="fa fa-angle-down hidden-side"></i></a>
             <ul>
                 <li><a href="#">My Account</a></li>
                 <li><a href="#">Edit Account</a></li>
@@ -61,7 +61,7 @@
                 <input type="text" class="ts-sidebar-search" placeholder="Search here...">
             </li>
             <li class="ts-label">Main</li>
-            <li class="open"><a href="#"><i class="fa fa-dashboard"></i> Posts</a></li>
+            <li class="open"><a href="{{ route('pots.posts') }}"><i class="fa fa-dashboard"></i> Posts</a></li>
             <li class="open"><a href="{{ route('post.create') }}"><i class="fa fa-plus"></i> Create</a></li>
 
 
@@ -105,29 +105,29 @@
 <script src="../js/chartData.js"></script>
 <script src="../js/main.js"></script>
 <script src="{{ asset('/vendors/ckeditor/ckeditor.js') }}"></script>
-<script>
+{{--<script>--}}
 
-    window.onload = function(){
+    {{--window.onload = function(){--}}
 
-        // Line chart from swirlData for dashReport
-        var ctx = document.getElementById("dashReport").getContext("2d");
-        window.myLine = new Chart(ctx).Line(swirlData, {
-            responsive: true,
-            scaleShowVerticalLines: false,
-            scaleBeginAtZero : true,
-            multiTooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",
-		});
+        {{--// Line chart from swirlData for dashReport--}}
+        {{--var ctx = document.getElementById("dashReport").getContext("2d");--}}
+        {{--window.myLine = new Chart(ctx).Line(swirlData, {--}}
+            {{--responsive: true,--}}
+            {{--scaleShowVerticalLines: false,--}}
+            {{--scaleBeginAtZero : true,--}}
+            {{--multiTooltipTemplate: "<%if (label){%><%=label%>: <%}%><%= value %>",--}}
+		{{--});--}}
 
-		// Pie Chart from doughutData
-		var doctx = document.getElementById("chart-area3").getContext("2d");
-		window.myDoughnut = new Chart(doctx).Pie(doughnutData, {responsive : true});
+		{{--// Pie Chart from doughutData--}}
+		{{--var doctx = document.getElementById("chart-area3").getContext("2d");--}}
+		{{--window.myDoughnut = new Chart(doctx).Pie(doughnutData, {responsive : true});--}}
 
-		// Dougnut Chart from doughnutData
-		var doctx = document.getElementById("chart-area4").getContext("2d");
-		window.myDoughnut = new Chart(doctx).Doughnut(doughnutData, {responsive : true});
+		{{--// Dougnut Chart from doughnutData--}}
+		{{--var doctx = document.getElementById("chart-area4").getContext("2d");--}}
+		{{--window.myDoughnut = new Chart(doctx).Doughnut(doughnutData, {responsive : true});--}}
 
-	}
-	</script>
+	{{--}--}}
+	{{--</script>--}}
 </body>
 
 </html>

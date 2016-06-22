@@ -383,6 +383,12 @@ footer .copyright {
     font-size:1.5em;
 }
 
+/*  DASHBOARD */
+
+table tbody tr .th-normal {
+    font-weight: normal;
+}
+
 
 /* Screens Resolution : 1024px
 -------------------------------------------------------------------------- */
