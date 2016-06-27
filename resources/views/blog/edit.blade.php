@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-sm-8 col-sm-offset-2">
                         <button class="btn btn-primary" type="submit">Guardar Post</button>
-                        <button class="btn btn-default" type="button">Cancelar</button>
+                        <a href="" class="btn btn-default" type="button">Cancelar</a>
                     </div>
                 </form>
             </div>

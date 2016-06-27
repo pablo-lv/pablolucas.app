@@ -79,7 +79,7 @@ Route::group(['middleware' => 'auth'], function () {
         'uses' => 'PostsController@update'
     ]);
 
-    Route::delete('/dashboard/blog/{slug}', [
+    Route::delete('/dashboard/blog/{post}', [
         'as' => 'post.destroy',
         'uses' => 'PostsController@destroy'
     ]);

@@ -86,6 +86,12 @@ class PostsController extends Controller
 
     public function update(Request $request, $slug)
     {
+        $this->validate($request, [
+            'title'  => 'required|max:255',
+            'description' => 'required',
+            'content'     => 'required'
+        ]);
+
         $post = Post::whereSlug($slug)->firstOrFail();
 
         $post->fill($request->all());
@@ -94,12 +100,11 @@ class PostsController extends Controller
         return redirect()->back();
     }
 
-    public function destroy($id)
+    public function destroy(Post $post)
     {
-        $post = Post::where('id', $id)->firstOrFail();
-
+//        dd($post);
         $post->delete();
 
-        return redirect()->route('site.blog');
+        return redirect()->back();
     }
 }
