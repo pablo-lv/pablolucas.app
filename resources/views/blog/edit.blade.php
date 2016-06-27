@@ -6,6 +6,7 @@
             <div class="panel-heading">Editar Post</div>
             <div class="panel-body">
                 @include('admin.partials.errors')
+                @include('admin.partials.success')
                 <form action="{{ route('post.update', $post->slug) }}" method="POST" class="form-horizontal">
                     <input type="hidden" name="_method" value="PUT">
                     {{ csrf_field() }}
@@ -36,3 +37,8 @@
         </div>
     </div>
 @stop
+@section('scripts')
+    <script>
+        $('div.alert').delay(3000).slideUp(300);
+    </script>
+@stop()

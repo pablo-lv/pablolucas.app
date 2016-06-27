@@ -6,8 +6,8 @@
             <div class="panel-heading">
                 Posts
             </div>
-            @include('admin.partials.success')
             <div class="panel-body">
+                @include('admin.partials.success')
                 <table id="zctb" class="display table table-hover dataTable">
                     <thead>
                         <tr>
@@ -46,6 +46,11 @@
 @stop
 @section('scripts')
     <script>
+
+        //Alert some post has been created
+        $('div.alert').not('.alert-important').delay(3000).slideUp(300);
+
+        //Delete some resource with sweetalert
         (function(window, $, undefined) {
 
             var Laravel = {
@@ -60,23 +65,23 @@
                 },
 
                 handleMethod: function(e) {
-                    e.preventDefault()
+                    e.preventDefault();
 
-                    var link = $(this)
-                    var httpMethod = link.data('method').toUpperCase()
-                    var form
+                    var link = $(this);
+                    var httpMethod = link.data('method').toUpperCase();
+                    var form;
 
                     // If the data-method attribute is not PUT or DELETE,
                     // then we don't know what to do. Just ignore.
                     if ($.inArray(httpMethod, ['PUT', 'DELETE']) === -1) {
-                        return false
+                        return false;
                     }
 
                     Laravel
                             .verifyConfirm(link)
                             .done(function () {
-                                form = Laravel.createForm(link)
-                                form.submit()
+                                form = Laravel.createForm(link);
+                                form.submit();
                             })
                 },
 

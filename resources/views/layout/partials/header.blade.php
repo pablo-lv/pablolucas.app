@@ -6,19 +6,19 @@
                     <a id="logo-container" href="#" class="brand-logo">Lucas</a>
                 </div>
                 <ul class="right hide-on-med-and-down">
-                    <li {{ Route::is('site.index') }}>
+                    <li @if(Route::is('site.index')) class="active" @endif >
                         <a href="{{ route('site.index') }}">Sobre Mi</a>
                     </li>
-                    <li>
+                    <li @if(Route::is('site.resume')) class="active" @endif >
                         <a href="{{ route('site.resume') }}">Resumen</a>
                     </li>
                     <li>
                         <a href="#">Portafolio</a>
                     </li>
-                    <li>
+                    <li @if(Route::is('site.blog')) class="active" @endif >
                         <a href="{{ route('site.blog') }}">Blog</a>
                     </li>
-                    <li>
+                    <li @if(Route::is('site.contact')) class="active" @endif >
                         <a href="{{ route('site.contact') }}">Contacto</a>
                     </li>
                 </ul>

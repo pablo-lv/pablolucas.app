@@ -12,7 +12,7 @@
     <title>Paul Site Admin</title>
 
     <!-- Font awesome -->
-    <link rel="stylesheet" href="../css/admin/font-awesome.min.css">
+    <link rel="stylesheet" href="../../css/admin/font-awesome.min.css">
     <!-- Sandstone Bootstrap CSS -->
     <link rel="stylesheet" href="../../css/admin/bootstrap.min.css">
     <!-- Bootstrap Datatables -->
@@ -63,8 +63,10 @@
                 <input type="text" class="ts-sidebar-search" placeholder="Search here...">
             </li>
             <li class="ts-label">Main</li>
-            <li class="open"><a href="{{ route('pots.posts') }}"><i class="fa fa-dashboard"></i> Posts</a></li>
-            <li class="open"><a href="{{ route('post.create') }}"><i class="fa fa-plus"></i> Create</a></li>
+            <li @if(Route::is('post.posts')) class="open" @endif >
+                <a href="{{ route('post.posts') }}">
+            <i class="fa fa-dashboard"></i> Posts</a></li>
+            <li @if(Route::is('post.create')) class="open" @endif ><a href="{{ route('post.create') }}"><i class="fa fa-plus"></i> Create</a></li>
 
 
             <!-- Account from above -->
@@ -97,17 +99,17 @@
 </div>
 
 <!-- Loading Scripts -->
-<script src="../js/jquery.min.js"></script>
-<script src="../js/bootstrap-select.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/jquery.dataTables.min.js"></script>
-<script src="../js/dataTables.bootstrap.min.js"></script>
-<script src="../js/Chart.min.js"></script>
-<script src="../js/fileinput.js"></script>
-<script src="../js/chartData.js"></script>
-<script src="../js/main.js"></script>
+<script src="{{ asset('/js/jquery.min.js') }}"></script>
+<script src="{{ asset('/js/bootstrap-select.min.js') }}"></script>
+<script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('/js/dataTables.bootstrap.min.js') }}"></script>
+<script src="{{ asset('/js/Chart.min.js') }}"></script>
+<script src="{{ asset('/js/fileinput.js') }}"></script>
+<script src="{{ asset('/js/chartData.js') }}"></script>
+<script src="{{ asset('/js/main.js') }}"></script>
 <script src="{{ asset('/vendors/ckeditor/ckeditor.js') }}"></script>
-<script src="../dist/sweetalert.min.js"></script>
+<script src="{{ asset('/dist/sweetalert.min.js') }}"></script>
 @yield('scripts')
 {{--<script>--}}
 

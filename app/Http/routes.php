@@ -54,7 +54,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', 'HomeController@index');
 
     Route::get('/dashboard/posts', [
-        'as' => 'pots.posts',
+        'as' => 'post.posts',
         'uses' => 'PostsController@posts'
     ]);
 

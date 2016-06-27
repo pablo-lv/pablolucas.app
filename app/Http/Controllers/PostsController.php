@@ -97,7 +97,7 @@ class PostsController extends Controller
         $post->fill($request->all());
         $post->save();
         
-        return redirect()->back();
+        return redirect()->back()->withSuccess("El post ha sido actualizado");
     }
 
     public function destroy(Post $post)
