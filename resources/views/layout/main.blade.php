@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/site.css">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('/dist/sweetalert.css') }}">
+    <script src="{{ asset('/dist/sweetalert.min.js') }}"></script>
     @yield('styles')
 </head>
 <body>
@@ -21,6 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <script>$(".button-collapse").sideNav();</script>
+
     @yield('scripts')
 
 </body>

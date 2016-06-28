@@ -32,6 +32,11 @@ Route::get('/contact', [
     'uses' => 'PortfolioController@contact'
 ]);
 
+Route::post('/sendmail', [
+    'as' => 'send.mail',
+    'uses' => 'PortfolioController@sendMail'
+]);
+
 //Blog Routes
 Route::get('/blog/', [
     'as' => 'site.blog',
@@ -42,8 +47,6 @@ Route::get('/blog/{slug}', [
     'as' => 'site.post',
     'uses' => 'PostsController@show'
 ]);
-
-
 
 
 // Auth Routes

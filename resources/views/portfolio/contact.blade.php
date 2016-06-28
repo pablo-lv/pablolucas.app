@@ -28,23 +28,26 @@
                                     </p>
                                 </div>
                                 <div class="col-sm-12 col-md-8">
+                                    @include('layout.partials.errors')
+                                    @include('layout.partials.success')
                                     <div class="clearfix contact-form card-panel grey lighten-5">
-                                        <form action="#" id="contactForm">
+                                        <form action="{{route('send.mail')}}" method="POST" id="contactForm">
+                                            {{ csrf_field() }}
                                             <div class="input-field">
                                                 <label for="contact_name" class="input-label">Nombre</label>
-                                                <input id="contact_name" type="text" name="contact_name" class="validate input-box" required>
+                                                <input id="contact_name" type="text" name="contact_name" class="validate input-box {{ $errors->has('contact_name') ? 'invalid' : ''  }}" value="{{ old('contact_name') }}">
                                             </div>
                                             <div class="input-field">
-                                                <label for="email" class="input-label">Email</label>
-                                                <input id="email" type="email" name="contact_email" class="validate input-box" required>
+                                                <label for="contact_email" class="input-label">Email</label>
+                                                <input id="email" type="email" name="contact_email" class="validate input-box {{ $errors->has('contact_email') ? 'invalid' : '' }}" value="{{ old('contact_email') }}">
                                             </div>
                                             <div class="input-field">
-                                                <label for="subject" class="input-label">Asunto</label>
-                                                <input id="subject" type="text" name="contact_subject" class="validate input-box" required>
+                                                <label for="contact_subject" class="input-label">Asunto</label>
+                                                <input id="subject" type="text" name="contact_subject" class="validate input-box {{$errors->has('contact_subject') ? 'invalid': ''}}" value="{{ old('contact_subject') }}">
                                             </div>
                                             <div class="input-field textarea-input">
-                                                <label for="message" class="input-label">Mensaje</label>
-                                                <textarea id="message" name="contact_message" class="validate materialize-textarea" style="height: 22px;" required></textarea>
+                                                <label for="contact_message" class="input-label">Mensaje</label>
+                                                <textarea id="message" name="contact_message" class="validate materialize-textarea" style="height: 22px;" >{{ old('contact_message') }}</textarea>
                                             </div>
                                             <div class="input-field  clearfix">
                                                 <button type="submit" class="waves-effect waves-light orange accent-2 btn">
@@ -62,4 +65,13 @@
             </div>
         </div>
     </section>
+@stop
+@section('scripts')
+    <script>
+        $(document).ready(function(){
+            $(".close").click(function(){
+                $("#card-alert").slideUp(300);
+            });
+        });
+    </script>
 @stop
