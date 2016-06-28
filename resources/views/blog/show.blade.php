@@ -21,15 +21,22 @@
                             <div class="post-content"> {!! $post->content !!}</div>
                             <div class="sharing">
                                 <h3 class="share-text">Por favor comparte:</h3>
-                                <a href="" class="waves-effect waves-light  btn blue darken-4">
+                                <a href="http://www.facebook.com/sharer/sharer.php?u={{ Request::url() }}&title={{$post->title}}" class="waves-effect waves-light  btn blue darken-4" target="_blank">
                                     <i class="mdi mdi-facebook"></i>
                                 </a>
-                                <a href="" class="waves-effect waves-light  btn blue ">
+                                <a href="http://twitter.com/intent/tweet?status={{$post->title}}+{{ Request::url() }}" class="waves-effect waves-light  btn blue " target="_blank">
                                     <i class="mdi mdi-twitter"></i>
                                 </a>
-                                <a href="" class="waves-effect waves-light  btn red darken-3">
+                                <a href="https://plus.google.com/share?url={{ Request::url() }}" class="waves-effect waves-light  btn red darken-3" target="_blank">
                                     <i class="mdi mdi-google-plus"></i>
                                 </a>
+                                {{--<div class="fb-share-button"--}}
+                                     {{--data-href="{{ Request::url() }}"--}}
+                                     {{--data-layout="button" data-mobile-iframe="false">--}}
+                                    {{--<a class="fb-xfbml-parse-ignore" target="_blank"--}}
+                                       {{--href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Compartir--}}
+                                    {{--</a>--}}
+                                {{--</div>--}}
                             </div>
                         </article>
                     </div>
@@ -59,5 +66,13 @@
 @section('scripts')
     <script src="{{ asset('/vendors/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js') }}"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 @stop
 
