@@ -11,9 +11,9 @@
                             <div class="data-post">
                                 <p>
                                     <i class="mdi mdi-account"></i>
-                                    <span>Author</span>
+                                    <span>{{ Auth::user()->name }}</span>
                                     <i class="mdi mdi-calendar"></i>
-                                    <span>{{ $post->created_at }}</span>
+                                    <span>{{ $post->created_at->format('Y-d-m') }}</span>
                                 </p>
                             </div>
                             {{--<p><a href=""><img src="../img/traslasierra.jpg" alt="" width="100%" height="150px"></a></p>--}}
@@ -49,7 +49,7 @@
 
                             <li class="collection-item">
                                 <a href="{{ route('site.post', $post->slug) }}">{{ $post->title }}</a>
-                                <span class="post-date">{{ $post->created_at }}</span>
+                                <span class="post-date">{{ $post->created_at->format('Y-d-m') }}</span>
                             </li>
                             @endforeach
                         </ul>

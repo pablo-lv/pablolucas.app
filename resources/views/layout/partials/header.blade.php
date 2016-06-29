@@ -29,24 +29,24 @@
                             <div class="pp-container">
                                 <img src="https://avatars0.githubusercontent.com/u/16660388?v=3&s=460" alt="">
                             </div>
-                            <h3>John Doe</h3>
-                            <h5>Creative UI/UX Expert</h5>
+                            <h3>Pablo Lucas</h3>
+                            <h5>Ingeniero en TIC</h5>
                         </div>
                     </li>
-                    <li class="nav-li">
-                        <a href="#">Sobre Mi</a>
+                    <li class="nav-li {{Route::is('site.index') ? 'active' : ''}}">
+                        <a href="{{ route('site.index') }}">Sobre Mi</a>
                     </li>
-                    <li class="nav-li">
-                        <a href="#">Resumen</a>
+                    <li class=" nav-li {{Route::is('site.resume') ? 'active' : ''}}" >
+                        <a href="{{ route('site.resume') }}">Resumen</a>
                     </li>
                     <li class="nav-li">
                         <a href="#">Portafolio</a>
                     </li>
-                    <li class="nav-li">
-                        <a href="#">Blog</a>
+                    <li class="nav-li {{ Route::is('site.blog') ? 'active' : '' }}">
+                        <a href="{{ route('site.blog') }}">Blog</a>
                     </li>
-                    <li class="nav-li">
-                        <a href="#">Contacto</a>
+                    <li class="nav-li {{Route::is('site.contact') ? 'active' : ''}}">
+                        <a href="{{ route('site.contact') }}">Contacto</a>
                     </li>
                 </ul>
                 <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi mdi-menu"></i></a>

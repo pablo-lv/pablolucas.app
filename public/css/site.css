@@ -375,6 +375,7 @@ footer .copyright {
 }
 
 .post-date {
+    color: #5e5e5e;
     width:100%;
     display: inline-block;
 }
@@ -668,42 +669,6 @@ table tbody tr .th-normal {
         margin-bottom: 25px;
     }
 
-    .funfact-box .card-panel {
-        margin-bottom: 30px;
-    }
-
-    .education-wrap, .experience-wrap,
-    .team-wrap, .fun-facts-wrap, .testimonial-wrap, .blog-wrap, .contact-wrap {
-        padding-bottom: 80px;
-        padding-top: 80px;
-    }
-
-    .portfolio-top {
-        padding-top: 80px;
-        padding-bottom: 15px;
-    }
-
-    .portfolio-category li {
-        margin-bottom: 15px;
-        margin-right: 20px;
-    }
-
-    .skill-graph .single-skill {
-        height: 335px;
-    }
-
-    .after-li {
-        height: 200px;
-    }
-
-    .skill-right {
-        padding-top: 30px;
-    }
-
-    .skill-title {
-        padding-top: 5px;
-    }
-
     .contact-info li {
         border: none;
         float: none;
@@ -711,13 +676,6 @@ table tbody tr .th-normal {
         margin-right: 10px;
         padding-right: 10px;
         text-align: left;
-    }
-
-    #map {
-        border-radius: 0;
-        height: 250px;
-        width: 100%;
-        margin-bottom: 30px;
     }
 
     .cform-wrapper {
@@ -739,17 +697,6 @@ table tbody tr .th-normal {
         width: 100%;
     }
 
-    .thumb-slides-container {
-        margin: 0 auto;
-        max-width: 450px;
-    }
-
-    .protfolio-item li {
-        float: left;
-        margin-right: 0.5%;
-        margin-bottom: 0.5%;
-        width: 49%;
-    }
     footer .footer-message p {
         width: 80%;
     }
@@ -815,27 +762,6 @@ table tbody tr .th-normal {
     .about-subtitle {
         font-size: 20px;
         margin-bottom: 25px;
-    }
-
-    .skill-graph .single-skill {
-        height: 335px;
-    }
-
-    .thumb-slides-container {
-        margin: 0 auto;
-        max-width: 285px;
-    }
-
-    #message-success {
-        float: left;
-        margin: 24px auto;
-        position: relative;
-        width: 100%;
-    }
-
-    #message-success p{
-        width: 100%;
-        text-align: center;
     }
 
     .portfolio-item li {

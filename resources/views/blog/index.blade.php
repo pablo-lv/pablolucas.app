@@ -12,7 +12,7 @@
                                 <div class="data-post">
                                     <p>
                                         <i class="mdi mdi-account"></i>
-                                        <span>Author</span>
+                                        <span>{{ Auth::user()->name }}</span>
                                         <i class="mdi mdi-calendar"></i>
                                         <span>{{ $post->created_at }}</span>
                                     </p>
